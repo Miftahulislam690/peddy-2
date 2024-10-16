@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peddy</title>
+    <link rel="shortcut icon" href="./images/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .active_btn {
+            background-color: #0E7A811A;
+            border-radius: 50px;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        @media only screen and (max-width: 576px) {
+            br {
+                display: none;
+            }
+        }
+
+        #loading{
+            display: none;
+        }
+        .lds-facebook,
+        .lds-facebook div {
+            box-sizing: border-box;
+        }
+        .lds-facebook {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+        .lds-facebook div {
+            display: inline-block;
+            position: absolute;
+            left: 8px;
+            width: 16px;
+            background: currentColor;
+            animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+        }
+        .lds-facebook div:nth-child(1) {
+            left: 8px;
+            animation-delay: -0.24s;
+        }
+        .lds-facebook div:nth-child(2) {
+            left: 32px;
+            animation-delay: -0.12s;
+        }
+        .lds-facebook div:nth-child(3) {
+            left: 56px;
+            animation-delay: 0s;
+        }
+        @keyframes lds-facebook {
+        0% {
+            top: 8px;
+            height: 64px;
+        }
+        50%, 100% {
+            top: 24px;
+            height: 32px;
+        }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- navbar section -->
+        <nav class="lg:w-9/12 md:w-9/12 w-11/12 mx-auto py-2">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start md:space-x-2 lg:space-x-2 space-x-1">
+                    <div class="lg:w-6 md:w-6 w-4"><img class="w-full" src="./images/logo.webp" alt="maybe a logo"></div>
+                    <div><p class="font-extrabold lg:text-2xl">Peddy</p></div>
+                </div>
+                <div class="navbar-center md:ml-0 lg:ml-0 ml-8">
+                  <ul class="flex lg:space-x-5 md:space-x-5 space-x-2">
+                    <li><a class="link link-hover">Home</a></li>
+                    <li><a class="link link-hover">Shop</a></li>
+                    <li><a class="link link-hover">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="" class="">
+                          <div class="lg:w-8 md:w-8 w-6 rounded-full">
+                            <img
+                              alt=""
+                              src="https://img.icons8.com/?size=80&id=ckaioC1qqwCu&format=png" />
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- banner section -->
+         <section class="lg:w-8/12 md:w-8/12 w-11/12 mx-auto p-6 mt-5">
+            <!-- text section -->
+            <div class="text-center space-y-7">
+                <p class="text-[#13131399] font-bold text-lg">Bringing Families Together ❤️‍🔥</p>
+                <h1 class="lg:text-6xl md:text-6xl text-3xl font-extrabold">Your Path to Adoption <br> Starts Here</h1>
+                <p class="text-sm text-[#131313]">It is a long established fact that a reader will be distracted by the readable content of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it has a.</p>
+                <button id="view_more_btn" class="btn bg-[#0E7A81] text-white">View More</button>
+            </div>
+            <div class="flex justify-center mt-8">
+                <img src="./images/pet.webp" alt="">
+            </div>
+         </section>
+    </header>
+    <main id="adopt_your_friends_section" class="lg:w-9/12 md:w-9/12 w-11/12 mx-auto mt-14">
+        <!-- adopt your best friend text section -->
+         <section>
+            <h1 class="text-4xl font-extrabold text-[#131313] text-center">Adopt  Your  Best Friend</h1>
+            <p class="text-center mt-5 text-[#131313B3] text-sm">It is a long established fact that a reader will be distracted by the readable content of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it has a.</p>
+         </section>
+         <!-- adopt your best friend btn section -->
+         <section class="mt-20">
+            <div id="categories_container" class="grid lg:grid-cols-4 md:grid-cols-4 grid-cols-1 lg:gap-10 md:gap-10 gap-4">
+                
+            </div>
+         </section>
+         <!-- best deal section -->
+          <section class="mt-14 flex justify-between items-center">
+            <div><p class="text-2xl font-extrabold">Best Deal For you</p></div>
+            <div><button id="sort_btn" class="btn bg-[#0E7A81] text-white">Sort By Price</button></div>
+          </section>
+          
+          <div class="flex justify-center mt-10">
+                <div id="loading" class="lds-facebook"><div></div><div></div><div></div></div>
+          </div>
+          <!-- best deal card section -->
+           <section id="pets_card_parent_container" class=" mt-12 flex flex-col lg:flex-row gap-5">
+                <section class="lg:w-3/4 md:order-1 lg:order-1 order-2">
+                    
+                   <div id="pets_card_container" class="grid lg:grid-cols-3 gap-5 rounded-2xl">
+                        
+                   </div>
+                    <!-- Modal -->
+                    <dialog id="my_modal_1" class="modal">
+                      <div class="modal-box">
+                        <img class="mx-auto w-16 mb-3" src="https://img.icons8.com/?size=48&id=PEmFcgjhBgKF&format=png" alt="">
+                        <h3 class="font-bold text-center text-5xl mb-4">Congrats!</h3>
+                        <p class="text-center">Adoption process is start for your pet</p>
+                        <p class="py-4 text-center text-gray-700"><span id="countdown" class="font-semibold text-black-500 text-5xl">3</span></p>
+                        <div class="modal-action flex justify-center">
+                          <form method="dialog">
+                            
+                          </form>
+                        </div>
+                      </div>
+                    </dialog>
+                    <!--  -->
+                    <button id="showModal" class="btn hidden" onclick="customModal.showModal()">open modal</button>
+                    <dialog id="customModal" class="modal">
+                        
+                            <div id="modalContainer" class="modal-box flex flex-col justify-center w-11/12 max-w-4xl scroll-auto pt-7">
+                                
+                            </div>
+                        
+                        </dialog>
+                </section>
+                <section id="liked_added_image_container" class="lg:w-1/4 lg:order-2 md:order-2 order-1">
+                    <div class="border-2 p-4 rounded-lg">
+                        <div class="border-2 p-1 rounded-lg mb-4"><p class="text-xl font-extrabold text-center">Liked Animals</p></div>
+                        <div id="liked_Animal_Container" class="grid grid-cols-2 gap-4">
+
+                        </div>
+                    </div>
+                </section>
+           </section>
+    </main>
+    <!-- footer section -->
+     <footer class="bg-[#131313] p-6 lg:p-20 mt-16 flex lg:flex-row flex-col lg:gap-0 gap-10 justify-between">
+        <div class="flex flex-col">
+            <div class="flex">
+                <img class="w-6 h-6 mr-2" src="./images/logo.webp" alt="maybe a logo"><h1 class="text-white text-2xl">Peddy</h1>
+            </div>
+            <div class="mt-7 text-[#FFFFFFE6] space-y-1">
+                <p>Location: av. Washington 165, NY CA 54003</p>
+                <p>Phone: +31 85 964 47 25</p>
+                <p>Email: info@yourdomain.com</p>
+                <p>Openings hours: 9.00 AM - 5.00 PM</p>
+            </div>
+            <div class="flex items-center space-x-3 mt-5">
+                <img class="w-10" src="https://img.icons8.com/?size=48&id=uLWV5A9vXIPu&format=png" alt="">
+                <i class="fa-brands fa-x-twitter text-4xl"></i>
+                <i class="fa-brands fa-youtube text-red-700 text-4xl"></i>
+                <i class="fa-brands fa-instagram text-4xl"></i>
+            </div>
+        </div>
+        <div>
+            <div class="mb-6"><h1 class="text-white font-bold text-2xl">Useful Links</h1></div>
+            <div class="text-[#FFFFFF99] flex flex-col space-y-1">
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">About Us</a>
+                <a class="link link-hover">Animals</a>
+                <a class="link link-hover">Foundation</a>
+                <a class="link link-hover">Contacts</a>
+            </div>
+        </div>
+        <div>
+            <div class="font-extrabold text-white">
+                <h1>Drop A Message</h1>
+            </div>
+            <div class="space-y-3 mt-8">
+                <input type="text" placeholder="Enter Your Email" class="input input-bordered w-full bg-transparent bg-[rgba(255, 255, 255, 0.05);]" />
+                <button type="submit" class="bg-[#0E7A81] btn w-full text-lg text-white">Subscribe</button>
+            </div>
+        </div>
+        
+     </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
